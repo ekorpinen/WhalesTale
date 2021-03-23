@@ -1,0 +1,13 @@
+Non Volatile Registers Ranges,,
+Page,Begin Address,End Address
+0L,0,1
+0L,105,106
+0L,108,112
+0U,128,255
+1,128,255
+2,128,154
+2,162,255
+3,128,226
+3,228,233
+3,248,255
+4,192,255

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="7.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CiscoSub20">
+      <HintPath>..\..\CiscoSub20\CiscoSub20\bin\Debug\netcoreapp3.1\CiscoSub20.dll</HintPath>
+    </Reference>
+    <Reference Include="DutGpio">
+      <HintPath>..\..\DutGpio\DutGpio\bin\Debug\netcoreapp3.1\DutGpio.dll</HintPath>
+    </Reference>
+    <Reference Include="Support">
+      <HintPath>..\..\Support\Support\bin\Debug\netcoreapp3.1\Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
