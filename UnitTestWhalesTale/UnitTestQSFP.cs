@@ -16,7 +16,8 @@ namespace UnitTestWhalesTale
     public class UnitTestQSFP
     {
 
-        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+//        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        private const string Sub20SerialNumber = "0x5858";   // Front DUT @Home
 
         private Module _module;
 

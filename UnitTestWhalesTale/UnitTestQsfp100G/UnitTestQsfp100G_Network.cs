@@ -11,7 +11,8 @@ namespace UnitTestWhalesTale.UnitTestQsfp100G
     [TestClass]
     public class UnitTestQsfp100G_Network
     {
-        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        //        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        private const string Sub20SerialNumber = "0x5858";   // Front DUT @Home
 
         private Module _module;
 

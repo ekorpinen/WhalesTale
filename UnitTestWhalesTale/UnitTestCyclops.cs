@@ -22,7 +22,8 @@ namespace UnitTestWhalesTale
 
         //readonly string sub20_SerialNumber = "0x4194";
         //
-         readonly string sub20_SerialNumber = "0x2A0A";  // DUT
+        //        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        private const string Sub20SerialNumber = "0x5858";   // Front DUT @Home
         //readonly string sub20_SerialNumber = "0x3538"; // AWN 
         //readonly string sub20_SerialNumber = "0x340C"; // Golden Unit
 
@@ -36,7 +37,7 @@ namespace UnitTestWhalesTale
             var policies = new Policies();
 
             var sub20Interfaces = new Sub20Interfaces();
-            _s20 = new CSub20(sub20_SerialNumber, sub20Interfaces);
+            _s20 = new CSub20(Sub20SerialNumber, sub20Interfaces);
 
             II2C i2C = new Sub20I2C(_s20);
             var gpioConfiguration = new GpioConfiguration(0x00380000, 0x00380000);

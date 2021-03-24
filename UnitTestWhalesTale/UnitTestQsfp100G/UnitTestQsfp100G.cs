@@ -11,7 +11,8 @@ namespace UnitTestWhalesTale.UnitTestQsfp100G
     [TestClass]
     public class UnitTestQsfp100G
     {
-        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        //        private const string Sub20SerialNumber = "0x2A0A"; // DUT
+        private const string Sub20SerialNumber = "0x5858";   // Front DUT @Home
 
         private Module _module;
         private IQsfp _qsfp;
@@ -301,7 +302,7 @@ namespace UnitTestWhalesTale.UnitTestQsfp100G
             var readResult = await _module.Qsfp100G.ErrorCodeAsync().ConfigureAwait(false);
             Trace.WriteLine($"ErrorCodeAsync: {readResult}");
             Assert.IsNotNull(readResult);
-            Assert.AreEqual(773,readResult);
+            Assert.AreEqual(0,readResult);
         }
 
         [TestMethod]
@@ -310,7 +311,7 @@ namespace UnitTestWhalesTale.UnitTestQsfp100G
             var readResult = _module.Qsfp100G.ErrorCode();
             Trace.WriteLine($"ErrorCode: {readResult}");
             Assert.IsNotNull(readResult);
-            Assert.AreEqual(773, readResult);
+            Assert.AreEqual(0, readResult);
         }
 
         [TestMethod]

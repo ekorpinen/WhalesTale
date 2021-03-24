@@ -8,9 +8,11 @@ namespace WhalesTale.QSFP
     public interface IQsfp
     {
         Task<List<NvrRange>> LoadNvrRanges(string filename);
+
         List<(Memory, int)> CheckPageForErrors(byte[] original, byte[] current, List<NvrRange> nvrRanges);
 
         Task<byte[]> GetPageAsync(Memory page);
+        
         byte[] GetPage(Memory page);
 
         Task<double> RxPowerAsync();
@@ -54,6 +56,5 @@ namespace WhalesTale.QSFP
 
         Task<List<int>> TxAdaptiveCtleAsync();
         List<int> TxAdaptiveCtle();
-
     }
 }
